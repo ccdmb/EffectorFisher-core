@@ -1,8 +1,8 @@
 # EffectorFisher-core Module (Python Library)
 
-The EffectorFisher module is a Python library used for comparing pangenome-derived protein isoform profiles with host virulence/disease phenotyping,  to predict candidate effectors with strong phenotypic-association. EffectorFisher can be used to refine the output of Predector (https://github.com/ccdmb/predector), which combines multiple methods to predict proteins with effector-like properties.
+The EffectorFisher module is a Python library used for comparing pangenome-derived protein isoform profiles with host virulence/disease phenotyping,  to predict candidate effectors with strong phenotypic-association. EffectorFisher can be used to refine the output of [Predector](https://github.com/ccdmb/predector), which combines multiple methods to predict proteins with effector-like properties.
 
-EffectorFisher was developed by Mohitul Hossain during his Ph.D. candidature, under the supervision of Dr James Hane and co-supervision of Drs Huyen Phan and Kristina Gagalova.  Assistance with code development was provided by Dr Kristina Gagalova and Mr Pavel Misiun, with testing performed by Ms Naomi Gray.   
+EffectorFisher was developed at the [CCDM](https://www.ccdm.com.au/) by Mohitul Hossain during his Ph.D. candidature, under the supervision of Dr James Hane and co-supervision of Drs Huyen Phan and Kristina Gagalova.  Assistance with code development was provided by Dr Kristina Gagalova and Mr Pavel Misiun, with testing performed by Ms Naomi Gray.   
 
 ## Installation
 EffectorFisher-core is a command-line tool, written as Python.
