@@ -1,6 +1,8 @@
 # EffectorFisher-core Module (Python Library)
 
-The EffectorFisher module is a Python library used for analyzing effector proteins to identify strong effector candidates. It focuses on inferring S-gene interactions or associations between candidate effector genes and host cultivars, which are identified via disease phenotyping panels. The module also takes into account other effector-like characteristics to refine the candidate list.
+The EffectorFisher module is a Python library used for comparing pangenome-derived protein isoform profiles with host virulence/disease phenotyping,  to predict candidate effectors with strong phenotypic-association. EffectorFisher can be used to refine the output of Predector (https://github.com/ccdmb/predector), which combines multiple methods to predict proteins with effector-like properties.
+
+EffectorFisher was developed by Mohitul Hossain during his Ph.D. candidature, under the supervision of Dr James Hane and co-supervision of Drs Huyen Phan and Kristina Gagalova.  Assistance with code development was provided by Dr Kristina Gagalova and Mr Pavel Misiun, with testing performed by Ms Naomi Gray.   
 
 ## Installation
 EffectorFisher-core is a command-line tool, written as Python.
