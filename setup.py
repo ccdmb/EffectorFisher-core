@@ -7,16 +7,17 @@ setup(
     install_requires=[
         "pandas>=1.0.0",
     ],
-    author="Kristina K. Gagalova",
+    author="Kristina K. Gagalova, Mohitul Hossain, James Hane",
     author_email="kristina.gagalova@curtin.edu.au",
     description="EffectorFisher: Association of disease phenotype with pangenome-derived protein-isoform profiles for improved prediction of fungal pathogenicity effectors",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/muhitulh/EffectorFisher-core",
+    url="https://github.com/ccdmb/EffectorFisher-core",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",
+    scripts=['effectorfisher_core.py']
 )
