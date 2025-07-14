@@ -1,0 +1,15 @@
+treatment	Cadoux	Calingiri
+16FG165	low	high
+16FG167	high	high
+16FG168	high	high
+205FG63	low	low
+Meck1	high	low
+Mur_S3	high	high
+SN15	low	low
+WAC13075	high	low
+WAC13077	low	low
+WAC13404	low	high
+WAC13418	high	high
+WAC13443	low	high
+WAC13632	low	low
+WAC8635	high	high
