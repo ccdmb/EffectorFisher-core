@@ -61,11 +61,11 @@ working_directory/
 │   ├── phenotype_data_quantitative.txt (or phenotype_data_qualitative.txt)
 │   ├── predector_results.txt
 │   └── known_effector.txt (optional)
-├── effectorfisher_module.py
+├── effectorfisher_core.py
 └── ...
 ```
 
-Make sure to place the input files in the `00_input_files` directory within your working directory. The `effector_fisher_module.py` file should be located in the root of your working directory.
+Make sure to place the input files in the `00_input_files` directory within your working directory.
 
 ## Usage
 
