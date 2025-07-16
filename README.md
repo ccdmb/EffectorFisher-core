@@ -67,14 +67,52 @@ working_directory/
 
 Make sure to place the input files in the `00_input_files` directory within your working directory. The `effector_fisher_module.py` file should be located in the root of your working directory.
 
-### Usage
-To run the EffectorFisher module, execute the following command:
+## Usage
+
+Run the pipeline with:
+```
+effectorfisher_core.py --data-type <qualitative|quantitative> [options]
+```
+
+### Basic example
 
 ```
-python effectorfisher_pipeline.py --data_type <data_type> [options]
+effectorfisher_core.py --data-type quantitative --input-dir 00_input_files/ --save
 ```
+This will:
+* Process input files
+* Apply default filters
+* Save both intermediate and final output files
 
+### Final Output Only (No --save)
+```
+effectorfisher_core.py --data-type quantitative --input-dir 00_input_files/
+```
 ## Options
+
+```
+effectorfisher_core.py --help
+
+usage: effectorfisher_core.py [-h] [--data-type {quantitative,qualitative}]
+                              [--input-dir INPUT_DIR] [--output-dir OUTPUT_DIR]
+                              [--min-variant MIN_VARIANT] [--save]
+                              [--cyst CYST] [--total-aa TOTAL_AA]
+                              [--pred-score PRED_SCORE] [--p-value P_VALUE]
+
+Process phenotype and variant data for EffectorFisher
+
+optional arguments:
+  -h, --help              Show help message and exit
+  --data-type             Required. Either `quantitative` or `qualitative`
+  --input-dir             Directory containing input files (default: `00_input_files`)
+  --output-dir            Directory for output files (default: `output/`)
+  --min-variant           Minimum isoform count (default: 5)
+  --save                  Save all intermediate and final results
+  --cyst                  Minimum cysteine count (default: 2)
+  --total-aa              Maximum amino acid length (default: 300)
+  --pred-score            Minimum prediction score (default: 2)
+  --p-value               P-value threshold (default: 0.05)
+```
 
 **Must include:**
 - `--data_type <data_type>`: Specify the type of phenotypic data you have. Choose either `qualitative` or `quantitative`. See the examples in the `input_files` directory.
@@ -90,8 +128,9 @@ python effectorfisher_pipeline.py --data_type <data_type> [options]
 
 ## Example
 ```
-python effectorfisher_pipeline.py --data_type quantitative --min_iso 5 --cyst 2 --pred_score 2 --total_aa 300 --p_value 0.05
+effectorfisher_core.py --data_type quantitative --min_iso 5 --cyst 2 --pred_score 2 --total_aa 300 --p_value 0.05
 ```
+
 ## Output
 
 ## Main Output
@@ -106,6 +145,4 @@ python effectorfisher_pipeline.py --data_type quantitative --min_iso 5 --cyst 2 
 | `filtered_loci_list.txt`       | List of loci based on the default or specified filters. Alternatively, you can apply filters to `complete_locus_list.txt` as required.                              |
 | `known_effectors_ranking.txt` | Contains the ranking of known effectors if you provide a known effector input file.                                                                                 |
 
-
-
-Step 14 (Additional Result): Rank the known effectors after filtering.
+Additional results: Rank the known effectors after filtering.
