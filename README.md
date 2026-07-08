@@ -1,4 +1,4 @@
-**Note:** For the latest and complete (actively maintained) version of this tool is available at [EffectorFisher-v2](https://github.com/muhitulh/EffectorFisher-v2).
+#### **Note:** Latest and complete (actively maintained) version of this tool is available at [EffectorFisher-v2](https://github.com/muhitulh/EffectorFisher-v2).
 
 
 # EffectorFisher-core Module (Python Library)
